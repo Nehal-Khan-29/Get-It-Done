@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Get It Done</title>
+        <link rel="stylesheet"  href="todostyle.css">
+    </head>
+    <body>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+        <div class="front" id="front">
+            <h1 class="todo-main">Get It Done List</h1>
+            <div class="buton-main">
+                <button class="household-btn" onclick="showHousehold()">Household</button>
+                <button class="work-btn" onclick="showwork()">Work</button>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+        <div class="household" id="household">
+            <div class="container">
+                <h2 class="todo">Household List</h2>
+                <div class="buton">
+                    <button class="home" onclick="hideHousehold()">Home</button>   
+                </div>
+            </div>
+
+            <div class="inputs">
+                
+                <div class="headin">
+                    <p><span>WORK</span></p>
+                    <p class="headin1"><span>DUE DATE</span></p>
+                    <p class="headin2"><span>DUE TIME</span></p>
+                    <p class="headin3"><span>DESCRIPTION</span></p></div>
+
+                <div class="input1"> 
+                    <input type="text" class="topic" id="topic" placeholder="work"/>
+                    <input type="date" class="date" id="date"/>
+                    <input type="time" class="time" id="time"/>
+                    <textarea class="des" id="des" rows="8" cols="40" placeholder="Description" ></textarea>
+                    <br/>
+                </div>
+
+                <ul class="ul1">
+                <li><div class="footer">
+                        <div><span class="rmngtsk">Remaining task </span>
+                        <span id="remaining-task"> 0</span>
+                        </div>
+                    </div></li>
+                <li><button id ="clearall-btn" class="clrall" onclick="clearAll()"> CLEAR ALL </button></li>
+                <li><button class="addbtn" id="addbtn" >ADD</button></li>
+                </ul>
+            </div>
+
+            <ul class="tasks" id="tasks"></ul>
+            
+            <div class="showdesc" id="showdesc"></div>
+
+            
+            
+            
+
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+        <div class="work" id="work">
+            <div class="container">
+                <h2 class="todo2">Work List</h2>
+                <div class="buton">
+                    <button class="home" onclick="hidework()">Home</button>
+                </div>
+            </div>
+
+            <div class="inputs2">
+                <div class="headin22">
+                    <p><span>WORK</span></p>
+                    <p class="headin12"><span>DUE DATE</span></p>
+                    <p class="headin22"><span>DUE TIME</span></p>
+                    <p class="headin32"><span>DESCRIPTION</span></p>
+                </div>
+
+                <div class="input2"> 
+                    <input type="text" class="topic2" id="topic2" placeholder="work"/>
+                    <input type="date" class="date2" id="date2"/>
+                    <input type="time" class="time2" id="time2"/>
+                    <textarea class="des2" id="des2" rows="8" cols="40" placeholder="Description" ></textarea>
+                    <br/>
+                </div>
+                <ul class="ul2">
+                    <li>
+                        <div class="footer2">
+                            <div>
+                                <span class="rmngtsk2">Remaining task</span>
+                                <span id="remaining-task2">0</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><button id="clearall-btn2" class="clrall2" onclick="clearAll2()">CLEAR ALL</button></li>
+                    <li><button class="addbtn2" id="addbtn2">ADD</button></li>
+                </ul>
+            </div>
+            
+            <ul class="tasks2" id="tasks2"></ul>
+            
+            <div class="showdesc2" id="showdesc2"></div>
+
+            </div>
+
+            
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------  -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+        <script src="E:\NK programs\HTML\To_Do\todojs.js"></script>
+
+    </body>
+
+</html>
