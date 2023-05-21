@@ -4,11 +4,19 @@ body{
     flex-direction: column;
     background-attachment: fixed;
 }
+
+#myImage {
+    display: none;
+    z-index: 3;
+    height: 620px;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top:40px;
+  }
+  
 .todo-main{
     color: white;
-    background-color: blue;
-    
-    
+    background-color: rgb(0, 140, 255);
 }
 
 button{
@@ -83,13 +91,14 @@ button:hover{
 }
 
 .headin,.headin22 {
-    color: white;
+    color: black;
+    font-weight: bold;
     display: flex;
     padding-left: 210px;  
 }
 
 .headin span,.headin22 span{
-    background-color: green;
+    background-image: linear-gradient(135deg,green,rgb(85, 238, 85),rgb(85, 238, 85),green);
     border-radius:10px;
     padding: 10px;
     
@@ -99,20 +108,28 @@ button:hover{
 
 
 /* -------------------------------------------------------------Household---------------------------------------------------------*/
+.todo{
+color: white;
+}
+
+.sp1{
+    display: flex;
+    margin-left: -32px;  
+}
 
 .headin1 {
     display: flex;
-    margin-left: 46px;  
+    margin-left: 70px;  
 }
 
 .headin2 {
     display: flex;
-    margin-left:-35px;  
+    margin-left:-15px;  
 }
 
 .headin3 {
     display: flex;
-    margin-left:10px;  
+    margin-left:20px;  
 }
 
 .input1 {
@@ -136,8 +153,15 @@ button:hover{
     margin-bottom: 104px;
     padding: 10px;
     border-radius: 10px ;
-    opacity: 0.5;
+    opacity: 0.6;
     border: none;
+}
+
+.date, .time, .topic, .des, .showdesc {
+    border: 3px solid black;
+    background-image: linear-gradient(135deg,rgb(76, 76, 224),rgb(74, 120, 225), rgb(67, 167, 234),rgb(74, 120, 225),rgb(76,76,224));
+    font-weight: bolder;
+    color: black;
 }
 
 .date:focus,
@@ -145,7 +169,6 @@ button:hover{
 .topic:focus,
 .des:focus {
     opacity: 100%;
-    border-color: green;
     transition: 1s ;
 }
 
@@ -153,7 +176,7 @@ button:hover{
     resize: none;
     padding: 10px;
     border-radius: 10px ;
-    opacity: 0.5;
+    opacity: 0.6;
 
 }
 
@@ -240,6 +263,7 @@ ul {
 .rmngtsk, #remaining-task{
     background-color: green;
     color: white;
+    font-size: large;
     font-weight: bold;
     height: 10px;
     border-radius: 10px;
@@ -249,20 +273,28 @@ ul {
 
 /*-----------------------------------------------------------------------------------work--------------------------------------------------*/
 
+.todo2{
+    color: white;
+    }
+
+.sp2{
+    display: flex;
+    margin-left: -25px;  
+}
 
 .headin12 {
     display: flex;
-    margin-left: 50px;
+    margin-left: 70px;  
 }
 
-.headin22 {
+.headin22{
     display: flex;
-    margin-left: -12px;
+    margin-left:-11px;  
 }
 
-.headin32 {
+.headin32{
     display: flex;
-    margin-left: 15px;
+    margin-left:20px;  
 }
 
 .input2 {
@@ -276,6 +308,7 @@ ul {
 .date2,
 .time2 {
     width: 200px;
+    
 }
 
 .topic2 {
@@ -287,24 +320,31 @@ ul {
 .topic2 {
     margin-bottom: 104px;
     padding: 10px;
+    opacity: 70%;
     border-radius: 10px ;
-    opacity: 0.5;
     border: none;
 }
+
+.date2, .time2, .topic2, .des2, .showdesc2 {
+    border: 3px solid black;
+    background-image: linear-gradient(135deg,rgb(76, 76, 224),rgb(74, 120, 225), rgb(67, 167, 234),rgb(74, 120, 225),rgb(76,76,224));
+    font-weight: bolder;
+    color: black;
+}
+
 .date2:focus,
 .time2:focus,
 .topic2:focus,
 .des2:focus {
     opacity: 100%;
-    border-color: green;
     transition: 1s ;
 }
 
 .des2 {
+    opacity: 70%;
     resize: none;
     padding: 10px;
     border-radius: 10px ;
-    opacity: 0.5;
 }
 
 .addbtn2 {
@@ -341,6 +381,7 @@ ul {
     width: 1000px;
     height: 50px;
     margin-top: 30px;
+    font-size: large;
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -390,6 +431,7 @@ ul {
 .rmngtsk2,
 #remaining-task2 {
     background-color: green;
+    font-size: large;
     color: white;
     font-weight: bold;
     height: 10px;
