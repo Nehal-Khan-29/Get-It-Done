@@ -1,4 +1,13 @@
-
+function startCode() {
+  console.log('Starting your code...');
+}
+window.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('myImage').style.display = 'block';
+  setTimeout(function() {
+    document.getElementById('myImage').style.display = 'none';
+    startCode();
+  }, 2000);
+});
 /* -------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 function showHousehold() {
