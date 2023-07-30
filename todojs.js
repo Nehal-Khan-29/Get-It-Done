@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     document.getElementById('myImage').style.display = 'none';
     startCode();
-  }, 2000);
+  }, 20);
 });
 /* -------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -325,3 +325,8 @@ function hidework() {
   const addButton2 = document.getElementById("addbtn2");
   addButton2.addEventListener("click", onAddbtnclicked2);
   
+
+
+// -------------------------------------
+
+
